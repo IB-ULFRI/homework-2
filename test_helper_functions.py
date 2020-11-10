@@ -17,9 +17,9 @@ class TestLocalAlignment(unittest.TestCase):
                 return 2
 
         valid_alignments = [
-            ("CAACCAACCTCGATCTCT", "TATCTCACTTCGTTCTCT"),
-            ("CAAC-CAACCTCGATCTCT", "TATCTC-ACTTCGTTCTCT"),
-            ("CAAC-CAACCTCGATCTCT", "TATCTCA-CTTCGTTCTCT"),
+            ("AACCAACCTCGATCTCT", "ATCTCACTTCGTTCTCT"),
+            ("AAC-CAACCTCGATCTCT", "ATCTC-ACTTCGTTCTCT"),
+            ("AAC-CAACCTCGATCTCT", "ATCTCA-CTTCGTTCTCT"),
         ]
 
         align1, align2, score = local_alignment(seq1, seq2, scoring_function)
